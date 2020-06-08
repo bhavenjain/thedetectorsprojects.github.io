@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="face-api.min.js"></script>
     <script defer src="script.js"></script>
+    <script src="slider.js"></script>
 </head>
 <body>
 
@@ -43,53 +44,171 @@
     </div>
 <br><br><br><br><br><br><br><br><br><br><br>
 
+
+
+
+
 <div class="padding">
     
-    <div class="slideshow-container">
-        <div class="mySlides1"></div>
-        <div class="mySlides2"><div class="mySlides fade">
-            <p class="quotes" style="margin-top: 13%;">"Recognize high-rollers and high risks with equal confidence"</p>
+    <h1 class="thebenefits"> The Benefits </h1>
+
+    <div class="picContainer">
+
+        <div id="image1" class="img">
+            
+            <h1 class="quotes" style="color: white;">Face detection is the first step in various other applications, including face tracking, face
+                analysis and face
+                recognition.</h1>
+            <img src="gradient.jpg" />
+
+        </div>
+        <div id="image2" class="img">
+            <h1 class="quotes" style="color: white;">Face detection is an AI-based computer technology that can identify and locate the presence of human
+                faces in digital
+                photos and videos.</h1>
+            <img src="gradient.jpg"/>
+               
             </div>
+        <div id="image3" class="img">
+            <h1 class="quotes" style="margin-top: 16%; color: white;">Due to the advancements in face detection technology, it is now possible to
+                detect faces in an image or video,
+                regardless of head pose, lighting conditions, and skin color.</h1>
+            <img src="gradient.jpg"/>
         </div>
-    
-        <div class="mySlides2"><div class="mySlides fade">
-        <h1 class="quotes">"Facial recognition technology<br> can be as good as or even better than humans in determining whether two photographed
-        images are of the same person and can do so in a fraction of the time."</h1>
+        <div id="image4" class="img">
+            <h1 class="quotes" style="color: white;">Face detection applications use algorithms that determine whether images are positive images (i.e.
+                images with a face)
+                or negative images (i.e. images without a face).</h1>
+            <img
+                src="gradient.jpg" />
         </div>
+
+        
+        <div class="left" onclick="left()"></div>
+        <div class="right" onclick="right()"></div>
+        <div class="dots">
+            <div class="dot a1"></div>
+            <div class="dot a2"></div>
+            <div class="dot a3"></div>
+            <div class="dot a4"></div>
         </div>
-    
-        <div class="mySlides2"><div class="mySlides fade">
-            <h1 class="quotes" style="margin-top: 14%; margin-left:22%;">"Respond faster to persons of interest"</h1>
-            </div>
-        </div>
-    
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-    
     </div>
-    <br>
     
     <script>
-        var slideIndex = [1, 1];
-        var slideId = ["mySlides1", "mySlides2"]
-        showSlides(1, 0);
-        showSlides(1, 1);
+        let i = 0;
 
-        function plusSlides(n, no) {
-            showSlides(slideIndex[no] += n, no);
-        }
+            let box1 = document.getElementById('image1');
+            let box2 = document.getElementById('image2');
+            let box3 = document.getElementById('image3');
+            let box4 = document.getElementById('image4');
+            let a1 = document.querySelector('.a1');
+            let a2 = document.querySelector('.a2');
+            let a3 = document.querySelector('.a3');
+            let a4 = document.querySelector('.a4');
 
-        function showSlides(n, no) {
-            var i;
-            var x = document.getElementsByClassName(slideId[no]);
-            if (n > x.length) { slideIndex[no] = 1 }
-            if (n < 1) { slideIndex[no] = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            a1.onclick = function () {
+                box1.style.opacity = 1;
+                box2.style.opacity = 0;
+                box3.style.opacity = 0;
+                box4.style.opacity = 0;
+                
+                i = 0;
+            };
+
+            a2.onclick = function () {
+                box1.style.opacity = 0;
+                box2.style.opacity = 1;
+                box3.style.opacity = 0;
+                box4.style.opacity = 0;
+                
+                i = 1;
+            };
+
+            a3.onclick = function () {
+                box1.style.opacity = 0;
+                box2.style.opacity = 0;
+                box3.style.opacity = 1;
+                box4.style.opacity = 0;
+                
+                i = 2;
+            };
+
+            a4.onclick = function () {
+                box1.style.opacity = 0;
+                box2.style.opacity = 0;
+                box3.style.opacity = 0;
+                box4.style.opacity = 1;
+                
+                i = 3;
+            };
+
+            function right() {
+                if (i == 0) {
+                    box1.style.opacity = 1;
+                    box2.style.opacity = 0;
+                    box3.style.opacity = 0;
+                    box4.style.opacity = 0;
+                    
+                    i++;
+                } else if (i == 1) {
+                    box1.style.opacity = 0;
+                    box2.style.opacity = 1;
+                    box3.style.opacity = 0;
+                    box4.style.opacity = 0;
+                    
+                    i++;
+                } else if (i == 2) {
+                    box1.style.opacity = 0;
+                    box2.style.opacity = 0;
+                    box3.style.opacity = 1;
+                    box4.style.opacity = 0;
+                    
+                    i++;
+                } else if (i == 3) {
+                    box1.style.opacity = 0;
+                    box2.style.opacity = 0;
+                    box3.style.opacity = 0;
+                    box4.style.opacity = 1;
+                    
+                    i = 0;
+                }
             }
-            x[slideIndex[no] - 1].style.display = "block";
-        }    
+
+            function left() {
+                if (i == 0) {
+                    box1.style.opacity = 0;
+                    box2.style.opacity = 0;
+                    box3.style.opacity = 0;
+                    box4.style.opacity = 1;
+                    
+                    i++;
+                } else if (i == 1) {
+                    box1.style.opacity = 0;
+                    box2.style.opacity = 0;
+                    box3.style.opacity = 1;
+                    box4.style.opacity = 0;
+                    
+                    i++;
+                } else if (i == 2) {
+                    box1.style.opacity = 0;
+                    box2.style.opacity = 1;
+                    box3.style.opacity = 0;
+                    box4.style.opacity = 0;
+                    
+                    i++;
+                } else if (i == 3) {
+                    box1.style.opacity = 1;
+                    box2.style.opacity = 0;
+                    box3.style.opacity = 0;
+                    box4.style.opacity = 0;
+                    
+                    i = 0;
+                }
+            }
+
     </script>
+    
+    
 </div>
 
 
