@@ -459,3 +459,60 @@ canvas {
 		max-width: 0;
 	}
 }
+
+.btn {
+	background: none;
+	color: #e7e7e7;
+	padding: 12px 20px;
+	border: none;
+	font-size: 2vw;
+	letter-spacing: 5px;
+	height: 50px;
+	font-weight: bold;
+	margin-left: 38%;
+	width: 300px;
+	-webkit-transition: 0.5s;
+	transition: 0.7s;
+	border-radius: 4px;
+	float: center;
+}
+
+.light-theme .btn {
+	color: #262626;
+	transition: 1s;
+}
+
+.btn:hover {
+	letter-spacing: 10px;
+	font-size: 28px;
+}
+
+.arrow {
+	color: #e7e7e7;
+	font-size: 4vw;
+	position: absolute;
+	margin-left: 30%;
+}
+
+.demo {
+	font-size: 4vw;
+	color: #e7e7e7;
+	transition: 1s;
+	letter-spacing: 10px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	margin-left: 0%;
+	-webkit-transition: ease-in 1s;
+	transition: 1.5s;
+}
+
+.demo:hover {
+	letter-spacing: 15px;
+	font-size: 4.5vw;
+}
+
+.light-theme .demo,
+.light-theme .arrow {
+	color: #262626;
+	transition: 1s;
+}
