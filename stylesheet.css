@@ -7,7 +7,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #262626;
-	font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	transition: .5s;
 }
 
@@ -96,9 +96,9 @@ canvas {
 	width: 90%;
 	height: 100%;
 	top: 50%;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	left: 50%;
 	letter-spacing: 2px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	line-height: 190%;
 	margin: 150px auto;
 	transform: translate(-50%, -50%);
@@ -326,13 +326,12 @@ canvas {
 	color: #e7e7e7;
 	letter-spacing: 2px;
 	font-size: 2vw;
-
 	transform: translate(0, -50%);
 	margin-left: 19%;
 	margin-right: 14%;
 	margin-top: 16%;
 	text-align: center;
-	font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	transition: 1s;
 	position: absolute;
 	text-shadow: 0px 0px 1px #919191, 1px 1px 1px #919191, 1px 2px 2px rgba(16, 16, 16, 0.4);
