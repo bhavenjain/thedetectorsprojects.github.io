@@ -516,3 +516,52 @@ canvas {
 	color: #262626;
 	transition: 1s;
 }
+
+
+
+
+.fa {
+  font-size: 60px;
+  size: 90px;
+  width: 100px;
+  height: 200px;
+  text-align: center;
+  text-decoration: none;
+  margin-left:5%;
+  margin-top:3%;
+
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+	font-size: 60px;
+  size: 90px;
+	margin-left:20%;
+  color: #e7e7e7;
+}
+
+.fa-twitter {
+  color: #e7e7e7;
+}
+
+.fa-google {
+  color: #e7e7e7;
+}
+
+.fa-youtube {
+  color: #e7e7e7;
+}
+
+.fa-instagram {
+  color: #e7e7e7;
+}
+
+.fa-snapchat-ghost {
+
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
