@@ -1,0 +1,189 @@
+body {
+	background: #262626;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 0;
+}
+text {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	pointer-events: none;
+}
+#chart {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	margin-left: 15%;
+	top: 0;
+	left: 0;
+}
+#question {
+	position: absolute;
+	width: 900px;
+	height: 500px;
+	top: 350px;
+	left: 57%;
+}
+#question h1 {
+	font-size: 2.5vw;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: absolute;
+	padding: 0;
+	color: #e7e7e7;
+	margin: 0;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+* {
+	box-sizing: border-box;
+}
+.container {
+	display: inline-block;
+}
+.end1,
+.middle1,
+.middle2 {
+	display: inline-block;
+	overflow: hidden;
+	height: 1.5em;
+}
+.end2 {
+	position: absolute;
+	color: #ff6a00;
+}
+.middle1,
+.middle2 {
+	color: #cfcfcf;
+}
+.middle1 {
+	animation: ani1 5s infinite;
+	animation-delay: -3s;
+	max-width: 0;
+}
+.middle2 {
+	animation: ani2 5s infinite;
+	animation-delay: -3s;
+	max-width: 10%;
+}
+
+@keyframes ani1 {
+	0% {
+		max-width: 500px;
+	}
+
+	25% {
+		max-width: 0;
+	}
+
+	75% {
+		max-width: 0;
+	}
+
+	90% {
+		max-width: 700px;
+	}
+
+	100% {
+		max-width: 700px;
+	}
+}
+
+@keyframes ani2 {
+	0% {
+		max-width: 0;
+	}
+
+	25% {
+		max-width: 0;
+	}
+
+	50% {
+		max-width: 700px;
+	}
+
+	75% {
+		max-width: 0;
+	}
+
+	100% {
+		max-width: 0;
+	}
+}
+
+.The {
+	position: absolute;
+	font-size: 3vw;
+	color: #ff6a00;
+	margin-left: 29%;
+	margin-top: 15%;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.start {
+	font-size: 7vw;
+	text-align: center;
+	margin-left: 2%;
+	margin-top: 13%;
+}
+
+.fa {
+	font-size: 60px;
+	size: 90px;
+	width: 100px;
+	height: 200px;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 5%;
+	margin-top: 3%;
+	opacity: 0.8;
+}
+
+.fa:hover {
+	opacity: 0.6;
+}
+
+.fa-facebook {
+	font-size: 60px;
+	size: 90px;
+	margin-left: 20%;
+	color: #e7e7e7;
+}
+
+.fa-twitter {
+	color: #e7e7e7;
+}
+
+.fa-google {
+	color: #e7e7e7;
+}
+
+.fa-youtube {
+	color: #e7e7e7;
+}
+
+.fa-instagram {
+	color: #e7e7e7;
+}
+
+.fa-snapchat-ghost {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.parallax {
+	background-color: #000;
+	height: 500px;
+	overflow: hidden;
+	width: 100%;
+	color: white;
+	padding: 0px;
+	margin-left: 0;
+	margin-right: 0;
+	box-shadow: 30px 50px 90px 4px rgba(0, 0, 0, .5);
+	background-attachment: fixed;
+	background-position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
